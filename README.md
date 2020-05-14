@@ -2,3 +2,4 @@
 
 # pip install
 pip install python-telegram-bot
+pip install Mecab

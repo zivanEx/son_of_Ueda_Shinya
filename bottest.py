@@ -1,9 +1,10 @@
 import json
 from http.server import BaseHTTPRequestHandler, HTTPServer
-import ebdm_system
+#import ebdm_system
+import echo_system
 
 # 対話システムを起動
-system = ebdm_system.EbdmSystem()
+system = echo_system.EchoSystem()
 
 # Dialogflowからの情報を受け取るサーバのクラス
 class MyHandler(BaseHTTPRequestHandler):
