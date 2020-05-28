@@ -37,6 +37,7 @@ def wmd(a, b):
 
 class EbdmSystem:
     def __init__(self):
+        print('system get started')
         self.es = Elasticsearch()
 
     def initial_message(self, input):
