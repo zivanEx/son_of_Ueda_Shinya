@@ -4,7 +4,7 @@ from telegram_bot import TelegramBot
 # ユーザの入力をそのまま返す対話システム．
 class EchoSystem:
     def __init__(self):
-        pass
+        print("echo system get started")
 
     def initial_message(self, input):
         return {'utt': 'こんにちは。対話を始めましょう。', 'end':False}

@@ -1,7 +1,7 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 # アクセストークン（先ほど発行されたアクセストークンに書き換えてください）
-TOKEN = "1269421710:AAHclzR-TkNmxCT7J_9v76jzfcUdm3Qxz7Y"
+TOKEN = "1115610078:AAG5xc9RbRPIraWq9GbBUh8EupzP9yCkKh0"
 
 class TelegramBot:
     def __init__(self, system):
@@ -25,7 +25,7 @@ class TelegramBot:
         update.message.reply_text(system_output["utt"])
 
     def run(self):
-        updater = Updater(TOKEN, use_context=True)
+        updater = Updater(TOKEN)
         dp = updater.dispatcher
         dp.add_handler(CommandHandler("start", self.start))
         dp.add_handler(MessageHandler(Filters.text, self.message))
