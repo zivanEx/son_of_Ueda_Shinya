@@ -41,6 +41,7 @@ class EbdmSystem:
         self.es = Elasticsearch()
 
     def initial_message(self, input):
+        print("initialized")
         return {'utt': 'こんにちは。対話を始めましょう。', 'end':False}
     
     def reply(self, input):
