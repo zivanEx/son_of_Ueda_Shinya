@@ -25,7 +25,7 @@ class TelegramBot:
         update.message.reply_text(system_output["utt"])
 
     def run(self):
-        updater = Updater(TOKEN)
+        updater = Updater(TOKEN, use_context=True)
         dp = updater.dispatcher
         dp.add_handler(CommandHandler("start", self.start))
         dp.add_handler(MessageHandler(Filters.text, self.message))
